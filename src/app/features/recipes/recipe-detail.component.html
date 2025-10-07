@@ -1,0 +1,26 @@
+<ng-container *ngIf="recipe">
+  <div class="aspect-[16/7] w-full overflow-hidden rounded-xl mb-6">
+    <img [src]="recipe.thumbnail" [alt]="recipe.title" class="w-full h-full object-cover">
+  </div>
+  <div class="flex items-start justify-between gap-4 mb-4">
+    <h1 class="text-3xl font-semibold">{{ recipe.title }}</h1>
+    <div class="flex gap-2">
+      <a [routerLink]="['/recipes/new']" (click)="$event.preventDefault(); edit()" class="px-3 py-2 rounded-lg border">Edit</a>
+      <button (click)="del()" class="px-3 py-2 rounded-lg bg-tomato text-white">Delete</button>
+    </div>
+  </div>
+  <p class="text-gray-700 mb-6">{{ recipe.description }}</p>
+
+  <section class="grid md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="font-semibold mb-2">Ingredients</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li *ngFor="let i of recipe.ingredients">{{ i }}</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-semibold mb-2">Instructions</h2>
+      <pre class="whitespace-pre-wrap bg-white p-4 rounded-xl border">{{ recipe.instructions }}</pre>
+    </div>
+  </section>
+</ng-container>

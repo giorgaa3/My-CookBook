@@ -1,0 +1,7 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg: #FAFAF9; --ink: #1F2937; }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); }

@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Margherita Pizza",
+      "description": "Classic Neapolitan with fresh basil.",
+      "thumbnail": "assets/seed/pizza.jpg",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Mozzarella",
+        "Basil",
+        "Olive oil"
+      ],
+      "instructions": "1) Preheat oven to 250\u00b0C...\n2) Spread sauce...\n3) Bake 7\u20139 min...",
+      "favorite": false
+    }
+  ]
+}
