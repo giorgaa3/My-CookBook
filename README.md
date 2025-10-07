@@ -1,10 +1,36 @@
-# MyCookbook
+# 🍳 Recipe Sharing Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
+A responsive Angular 19 application for sharing, creating, and managing recipes.  
+Built with **Angular + TailwindCSS**, using **Reactive Forms**, **Routing**, and a **Mock localStorage backend**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
+- 🧁 Display recipes with title, description, and image  
+- ✏️ Create, edit, and delete recipes  
+- ❤️ Mark recipes as favorites  
+- 🔍 Search recipes by title or ingredients  
+- 🧩 Responsive UI using TailwindCSS  
+- 💾 Data stored locally via browser `localStorage` (no backend setup required)
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** Angular 19 (standalone)
+- **Styling:** TailwindCSS 4
+- **Forms:** Angular Reactive Forms
+- **Data Layer:** Local mock service
+- **Routing:** Angular Router
+
+---
+
+## 🧩 How to Run
+
+### 1️⃣ Clone and install
+```bash
+git clone https://github.com/giorgaa3/My-CookBook.git
+cd My-CookBook
+npm install
 
 ```bash
 ng serve
